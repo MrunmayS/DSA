@@ -10,7 +10,7 @@ for _ in range(n):
         c = s[l:]
         s = s[0:l]
         sl = int(s[-1])
-        s = s + c*sl
+        s = "".join([s, c*sl])
 
     print(len(s)%m)
         
