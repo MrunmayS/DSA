@@ -1,5 +1,5 @@
 n = int(input())
-
+m = 1000000007
 for _ in range(n):
     x = int(input())
     c = ''
@@ -7,4 +7,10 @@ for _ in range(n):
     l = 0
     while l != x:
         l = l + 1
-        s1 = 
+        c = s[l:]
+        s = s[0:l]
+        sl = int(s[-1])
+        s = s + c*sl
+
+    print(len(s)%m)
+        
